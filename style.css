@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--Very-dark-blue: hsl(233, 47%, 7%);
+	--Dark-desaturated-blue: hsl(244, 38%, 16%);
+	--Soft-violet: hsl(277, 64%, 61%);
+
+	--White: hsl(0, 0%, 100%);
+	--Slightly-transparent-white1: hsla(0, 0%, 100%, 0.75);
+	--Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+	background: var(--Very-dark-blue);
+}
+
+.container {
+	background: var(--Dark-desaturated-blue);
+	border-radius: 10px;
+}
+
+.bg-image {
+	box-shadow: inset 0 0 0 1000px hsla(298, 83%, 72%, 0.418);
+}
+
+h1 {
+	color: var(--White);
+}
+
+h1 span {
+	color: var(--Soft-violet);
+}
+
+h1 #grow {
+	color: var(--White);
+}
+
+p {
+	color: var(--Slightly-transparent-white1);
+
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+}
+
+.list1 {
+	color: var(--White);
+	font-size: 18px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	padding-top: 10px;
+}
+
+.ctq {
+	color: var(--Slightly-transparent-white);
+}
+
+@media screen and (max-width: 768px) {
+	.bg-image {
+		background-image: url('../images/image-header-mobile.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 230px;
+		border-radius: 10px 10px 0 0;
+	}
+
+	.container {
+		margin: 30px 20px 0 20px;
+		max-width: 600px;
+	}
+
+	.wrapper {
+		padding-top: 30px;
+		height: 400px;
+	}
+
+	h1 {
+		padding-bottom: 20px;
+		line-height: 30px;
+		margin: 0 50px 0 40px;
+		text-align: center;
+		font-size: 25px;
+		font-family: 'Inter', sans-serif;
+		font-weight: 700;
+	}
+
+	h1 #grow {
+		color: var(--White);
+		display: flex;
+		justify-content: center;
+	}
+
+	p {
+		line-height: 20px;
+		margin: 0 30px 0 20px;
+		font-size: 15px;
+		padding: 0 25px;
+		text-align: center;
+	}
+
+	.list {
+		text-align: center;
+		padding-top: 30px;
+		line-height: 1.2;
+	}
+
+	.ctq {
+		font-size: 10px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.bg-image {
+		background-image: url('../images/image-header-desktop.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 680px;
+		border-radius: 0 10px 10px 0;
+	}
+	.container {
+		border-radius: 10px;
+		max-width: 1000px;
+		margin: 100px;
+	}
+
+	.foo {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.wrapper {
+		padding: 30px;
+	}
+
+	h1 {
+		font-size: 2.8em;
+		line-height: 54px;
+		margin: 0 35px 0 35px;
+		font-family: 'Inter', sans-serif;
+		font-weight: 700;
+	}
+
+	p {
+		margin-top: 20px;
+		margin-left: 40px;
+		width: 350px;
+		line-height: 30px;
+	}
+
+	.list {
+		margin-top: 25px;
+		margin-left: 30px;
+		display: flex;
+		gap: 50px;
+		align-items: center;
+	}
+
+	.list1 {
+		text-align: center;
+		line-height: 1.5;
+	}
+
+	.ctq {
+		font-size: 12px;
+	}
+}
